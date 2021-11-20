@@ -4,6 +4,7 @@ const initialState = {
 }
 
 export const thunkFunction = () => (dispatch, getState) => {
+    // I understand this thunk isn't really taking advantage of what a thunk can do, but I just wanted to create a basic redux app with a thunk in it
     const foo = getState().foo
     
     if (foo === true) {
